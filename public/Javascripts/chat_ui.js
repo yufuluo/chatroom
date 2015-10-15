@@ -30,7 +30,7 @@ var socket = io.connect();
 $(document).ready(function() {
 	var chatApp = new Chat(socket);
 
-	socket.on('nameResult', fucntion(result) {
+	socket.on('nameResult', function(result) {
 		var message;
 
 		if (result.success) {
